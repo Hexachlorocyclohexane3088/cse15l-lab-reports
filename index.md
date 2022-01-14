@@ -3,7 +3,7 @@
 [Link](https://leetcode.com/problems/two-sum/)   
 **Solution:**  
 [Link](https://leetcode.com/problems/two-sum/discuss/3/Accepted-Java-O(n)-Solution)  
-***
+---
 ![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg) 
 ##1. One
 2. Two
@@ -14,7 +14,8 @@
 * UCSD
 * CSE
 ---  
-`this is a test` with backticks 
+`this is a test` with backticks  
+--- 
 ```
 # the solution to the twoSum
 import java.util.HashMap;
@@ -33,5 +34,5 @@ class Solution {
         
     }
 }
-```
+```  
   
