@@ -8,13 +8,12 @@
 ##1. One
 2. Two
 3. Three
-> Blockquote
-> test 
-* List
-* UCSD
-* CSE
+> Related topics
+* Hash Table
+* Two Pointer
+* Sorting
 
-`this is a test` with backticks  
+`this is a O(n) time complexity solution `  
 
 ```
 # the solution to the twoSum
