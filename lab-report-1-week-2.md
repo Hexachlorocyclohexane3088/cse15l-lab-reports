@@ -1,4 +1,4 @@
-# ieng6 tutorial for cse15l  
+# ieng6 tutorial for CSE 15L  
 ## by Michael Ma
 ![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)   
 ## Step 1: Installing VScode
@@ -110,12 +110,19 @@ Now, you can login ieng6 without entering the password.
 We can further improve remote running.  
 
 * Try to add a command (i.e.`ls`) after ssh login command, like:  
-![image]()  
-This allow you to do some command on the remote severe without explicitly login and log out.  
+
+![image](images/part6-1.png)  
+
+**This allow you to do some command on the remote severe without explicitly login and log out.**  
 
 * Try to use `;` to seperate different commands, what will happen?  
-![image]()  
-The `;` did nothing more than allow you to type in all commmands first, and run them one-by-one. If you have used MATLAB, you might find it familar.  
+
+![image](images/part6-2.png)  
+
+* The `;` did nothing more than allow you to type in all commmands first, and run them one-by-one. If you have used MATLAB, you might find it familar.  
+
+*in this case, the command after the `;` just list files and directories in your current home directory*
+
 
   
 ---
