@@ -66,23 +66,59 @@ To log out, you can use  `Ctrl + D` or run `exit`.
 *think: what does `~` means?*  
 
 * You will be asked to input your passward like in step3. 
+
 * Then, `ssh` to ieng6 again, run `javac` and `java` in ieng6. Is the printed message same as when you run this in local?  *Discuss with your peers*  
+  
 * What different could you figure out after running one of the `ls` command now?  
+  
 * Discuss with your peers, what do you think `scp` command actually did?  
+  
 
 ## Step 5: Setting an SSH Key  
 ---  
 *How long did it take you to `ssh` once?*  
 * You might find it really time-comsuming to input the password repeatedly. 
+
 * Luckily there is a certain way to let the server "recognize you".  
+
 * The `ssh-keygen` generate a public key and a private key. You can `scp` the public key to the server, and use the private key to "unlock" the server whenever you want to login.   
+
 * Try: run the following command:  
-![image]()  
+![image](images/keygen.png)  
 *You need to name the key you generated this time.*  
 *For the passphrase, you just need to leave it as blank.*
+* Copy the directory in which your keys were located.  
+* Now, a public key and a private key have been generated. You need to `scp` the public key to your directory in ieng6. Do it now.  
+```
+$ ssh cs15lwi22zz@ieng6.ucsd.edu
+<Enter Password>
+$ mkdir .ssh 
+$ exit
+# back on client
+$ scp <Paste the key's directory here>/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
+# You use your username and the path you saw in the command above
+```
+* `mkdir .ssh` means "make a directory named '.ssh'".   
+
+Now, you can login ieng6 without entering the password.  
+
+* Try to `ssh` again, if you can login without the password, you are done.  
 
 ## Step 6: Optimizing Remote Running  
-
-
 ---  
 
+We can further improve remote running.  
+
+* Try to add a command (i.e.`ls`) after ssh login command, like:  
+![image]()  
+This allow you to do some command on the remote severe without explicitly login and log out.  
+
+* Try to use `;` to seperate different commands, what will happen?  
+![image]()  
+The `;` did nothing more than allow you to type in all commmands first, and run them one-by-one. If you have used MATLAB, you might find it familar.  
+
+  
+---
+>**Now you might be more familar with ieng6!**
+  
+>**If not, try to explore it with your peers! Wish you could succeed in CSE 15L!**  
