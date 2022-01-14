@@ -53,9 +53,10 @@ Please try:
 * `cat /home/linux/ieng6/cs15lwi22/public/hello.txt` 
 
 To log out, you can use  `Ctrl + D` or run `exit`. 
- 
+
 ## Step 4: Moving Files with `scp`  
 ---  
+* Create a simple java file on your local desktop, like this:  
 
 
 
