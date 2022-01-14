@@ -57,15 +57,29 @@ To log out, you can use  `Ctrl + D` or run `exit`.
 ## Step 4: Moving Files with `scp`  
 ---  
 * Create a simple java file on your local desktop, like this:  
+![image](images/Part4-1.png)  
+*Discuss with your peers: what you saw after run `javac` and `java` like you did in CSE8B/CSE11?*  
 
+* Then, run the following command:  
+`scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/`  
 
+*think: what does `~` means?*  
 
-
+* You will be asked to input your passward like in step3. 
+* Then, `ssh` to ieng6 again, run `javac` and `java` in ieng6. Is the printed message same as when you run this in local?  *Discuss with your peers*  
+* What different could you figure out after running one of the `ls` command now?  
+* Discuss with your peers, what do you think `scp` command actually did?  
 
 ## Step 5: Setting an SSH Key  
-
-
 ---  
+*How long did it take you to `ssh` once?*  
+* You might find it really time-comsuming to input the password repeatedly. 
+* Luckily there is a certain way to let the server "recognize you".  
+* The `ssh-keygen` generate a public key and a private key. You can `scp` the public key to the server, and use the private key to "unlock" the server whenever you want to login.   
+* Try: run the following command:  
+![image]()  
+*You need to name the key you generated this time.*  
+*For the passphrase, you just need to leave it as blank.*
 
 ## Step 6: Optimizing Remote Running  
 
