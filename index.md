@@ -13,7 +13,7 @@
 * Two Pointer
 * Sorting
 
-`this is a O(n) time complexity solution `  
+change 
 
   
 
