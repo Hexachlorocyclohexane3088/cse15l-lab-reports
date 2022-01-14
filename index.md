@@ -1,19 +1,20 @@
-#example  /
-Given an *array* of *integers* nums and an *integer* target, return indices of the two numbers such that they add up to target.  /
-[Link](https://leetcode.com/problems/two-sum/)  /
-**Solution:**  /
-[Link](https://leetcode.com/problems/two-sum/discuss/3/Accepted-Java-O(n)-Solution)  /
+#Given an *array* of *integers* nums and an *integer* target, return indices of the two numbers such that they add up to target.    
 ---
-![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg) /
+[Link](https://leetcode.com/problems/two-sum/)   
+**Solution:**  
+[Link](https://leetcode.com/problems/two-sum/discuss/3/Accepted-Java-O(n)-Solution)  
+***  
+![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg) 
 ##1. One
 2. Two
 3. Three
 > Blockquote
-> test /
+> test 
 * List
 * UCSD
-* CSE/
-`this is a test` with backticks /
+* CSE
+---  
+`this is a test` with backticks 
 ```
 # the solution to the twoSum
 import java.util.HashMap;
@@ -33,3 +34,4 @@ class Solution {
     }
 }
 ```
+  
