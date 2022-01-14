@@ -4,6 +4,6 @@ Given an *array* of *integers* nums and an *integer* target, return indices of t
 **Solution:**  
 [Link](https://leetcode.com/problems/two-sum/discuss/3/Accepted-Java-O(n)-Solution)  
 ---
-1. One  
-2. Two  
-3. Three  
+1. One
+2. Two
+3. Three
