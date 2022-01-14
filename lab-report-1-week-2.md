@@ -89,15 +89,16 @@ To log out, you can use  `Ctrl + D` or run `exit`.
 *For the passphrase, you just need to leave it as blank.*
 * Copy the directory in which your keys were located.  
 * Now, a public key and a private key have been generated. You need to `scp` the public key to your directory in ieng6. Do it now.  
-```
-$ ssh cs15lwi22zz@ieng6.ucsd.edu
-<Enter Password>
-$ mkdir .ssh 
-$ exit
-# back on client
-$ scp <Paste the key's directory here>/id_rsa.pub cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys
-# You use your username and the path you saw in the command above
-```
+
+`$ ssh cs15lwi22zz@ieng6.ucsd.edu`  
+`<Enter Password>`  
+`$ mkdir .ssh`  
+`$ exit`  
+`# back on client`  
+`$ scp <Paste the key's directory here>/id_rsa.pub`   `cs15lwi22@ieng6.ucsd.edu:~/.ssh/authorized_keys`  
+  
+**You need to use your username and the path you saw in the command above**
+
 * `mkdir .ssh` means "make a directory named '.ssh'".   
 
 Now, you can login ieng6 without entering the password.  
