@@ -22,4 +22,15 @@ The bug is caused by, if there are no () followed by [], the indexOf method woul
 The sympton is exception is thrown.  
 The faluare unducing input have no () so the indexOf method would return -1, which cause the exception to be thrown.  
 
+3. Change 3 (By Takuro Kitazawa)  
+![Image](images/change2.png)   
+[Failure Inducing Input](https://github.com/audreyfishy/markdown-parse/blob/a755c0298943680d8902cdeb2fa4a30957a3eace/breaking.md)  
+Symptom:   
+When there are no closing parentheses but have a open parentheses, the indexoutofbound exception would be thrown.  
+The output is as the following screen shot.  
+![Image](images/OUTPUT2.png)     
+The bug is caused by, if there are no () followed by [], the indexOf method would return -1 when searching for "(" or ")". So the substring method would take index as -1, which is not allowed. So the exception is thrown. 
+The sympton is exception is thrown.  
+The faluare unducing input have no () so the indexOf method would return -1, which cause the exception to be thrown.  
+
 
