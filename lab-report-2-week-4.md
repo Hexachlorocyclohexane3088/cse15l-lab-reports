@@ -11,9 +11,9 @@ The bug is caused by, if there texts after the last link, the indexOf method sea
 Sympton is nothing will be printed until the stack memory were used up.  
 The failuare inducing input have texts after the second link parentheses, which would cause the bug.  
 
-2. Change 2 (By Michael Ma)
+2. Change 2 
 ![Image](images/change2.png)   
-[Failure Inducing Input](https://github.com/Hexachlorocyclohexane3088/markdown-parse1/blob/74ce7e545fce5ec3802c8443ed0abb155291626d/aNewFile.md)  
+[Failure Inducing Input](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/2c9300a80518830d534650fc765f4731e4f1c2e9/test-file3.md)  
 Symptom:   
 When there are no () followed by [], the indexoutofbound exception would be thrown.  
 The output is as the following screen shot.  
