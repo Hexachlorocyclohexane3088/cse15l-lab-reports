@@ -26,7 +26,7 @@ We could fix this problem by adding another if statement to determine whether th
 
 3. Change 3 
 ![Image](images/change3.png)   
-[Failure Inducing Input](https://github.com/audreyfishy/markdown-parse/blob/a755c0298943680d8902cdeb2fa4a30957a3eace/breaking.md)  
+[Failure Inducing Input](https://github.com/Hexachlorocyclohexane3088/markdown-parse1/blob/main/markdown-parse-main/test-file8.md)  
 Symptom:   
 An outOfMemoryError is thrown, and nothing is printed.    
 The output is as the following screen shot.  
@@ -37,3 +37,5 @@ The faluare unducing input have no "]" after a "[" , so the loop would not break
 We fixed this bug simply by adding another if statement so that the while loop would break if detecting no "]".    
 
 
+## Thank you for reading!  
+![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)   
