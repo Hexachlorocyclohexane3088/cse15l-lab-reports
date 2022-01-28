@@ -2,9 +2,9 @@
 ## by Michael Ma
 1. Change 1 (By Michael Ma)
 ![Image](images/Michael.png)     
-[Failure Inducing Input](https://github.com/Hexachlorocyclohexane3088/markdown-parse1/blob/11de2a777b5a3a567762e0a882d9311c613b2259/anotherBug.md)  
+[Failure Inducing Input](https://github.com/ucsd-cse15l-w22/markdown-parse/blob/2c9300a80518830d534650fc765f4731e4f1c2e9/test-file2.md)  
 Symptom: 
-When nested parentheses occur, the program would go in an infinite loop.   
+The program went in infinite loop.     
 The output is as the following screen shot.  
 ![Image](images/MichaelOutPut.png)     
 The bug is caused by, if there were nested parentheses and only one bracket the indexOf method would always search from the same position (the index of the closing bracket).    
