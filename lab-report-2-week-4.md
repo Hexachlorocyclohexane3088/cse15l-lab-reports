@@ -12,11 +12,14 @@ Sympton is nothing will be printed and the program would not stop util we press 
 The failuare inducing input have only one bracket and two nested parentheses, which would cause the bug.  
 
 2. Change 2 (By Michael Ma)
-![Image]()   
-[Failure Inducing Input]()  
+![Image](images/change2.png)   
+[Failure Inducing Input](https://github.com/Hexachlorocyclohexane3088/markdown-parse1/blob/74ce7e545fce5ec3802c8443ed0abb155291626d/aNewFile.md)  
 Symptom:   
 When there are no () followed by [], the indexoutofbound exception would be thrown.  
 The output is as the following screen shot.  
-![Image]()     
+![Image](images/OUTPUT2.png)     
+The bug is caused by, if there are no () followed by [], the indexOf method would return -1 when searching for "(" or ")". So the substring method would take index as -1, which is not allowed. So the exception is thrown. 
+The sympton is exception is thrown.  
+The faluare unducing input have no () so the indexOf method would return -1, which cause the exception to be thrown.  
 
 
