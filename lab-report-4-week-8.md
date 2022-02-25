@@ -1,7 +1,10 @@
 # Lab Report 4  
 ## by Michael Ma
 **Code Review**  
-Link to [My markdown-parse repository](https://github.com/Hexachlorocyclohexane3088/markdown-parse1) and a link to [the one we reviewed](https://github.com/aajc/markdown-parse)   
+Link to [My markdown-parse repository](https://github.com/Hexachlorocyclohexane3088/markdown-parse1) and a link to [the one we reviewed](https://github.com/aajc/markdown-parse)  
+Code used for testing: (Commenting off the tests methods that are not using each time before run the test)
+![code used for testing](images/testcode.png)
+Unfortunately none of the tests passed.  
 ## Snippet 1
 ```
 `[a link`](url.com)
@@ -17,9 +20,9 @@ Link to [My markdown-parse repository](https://github.com/Hexachlorocyclohexane3
 ["`google.com","google.com","ucsd.edu"]
 ```
 **Other group output:**  
-![image]()  
-**My out put:** 
-
+![image](images/otheroutput_1.png)  
+**My out put:**   
+![image](images/myoutput_1.png)  
 ## Snippet 2
 ```
 [a [nested link](a.com)](b.com)
@@ -33,7 +36,9 @@ Link to [My markdown-parse repository](https://github.com/Hexachlorocyclohexane3
 ["a.com","a.com(())","example.com"]
 ```
 **Other group output:**  
+![image](images/otheroutput_2.png)  
 **My out put:**  
+![image](images/myoutput_2.png) 
 
 ## Snippet 3
 ```
@@ -67,4 +72,6 @@ And then there's more text
 ["https://ucsd-cse15l-w22.github.io/"]
 ```
 **Other group output:**  
-**My out put:** 
+![image](images/otheroutput_3.png)    
+**My out put:**  
+![image](images/myoutput_3.png)  
