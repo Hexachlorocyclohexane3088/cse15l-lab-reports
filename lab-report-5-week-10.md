@@ -23,6 +23,16 @@ Go back to home directory and use the `diff` to compare results:
 ```
 diff report10/markdown-parse/results.txt report10/markdown-parse1/results.txt 
 ```
-diff lab9/markdown-parse/results.txt lab9/markdown-parse/markdown-parse1results.txt
+The result:  
+![image](images/repo5_result1.png)
+![image](images/repo5_result2.png)
+![image](images/repo5_result3.png)
+We would like to examine the first two differences:  
+![image](images/repo5_twoDiff.png)
+## First test 
+The content in `212.md` is 
+
+We could use [the CommonMark demo site](https://spec.commonmark.org/dingus/) to determine the correct output. 
+
 ## Thank you for reading!  
 ![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)   
