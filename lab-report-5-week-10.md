@@ -71,7 +71,8 @@ Three links are parsed, which are
 Output of the given `MarkdownParse.java` is correct, while the output of my `MarkdownParse.java` is incorrect.  
 This is because, in my `MarkdownParse.java` , there is some code used to eliminate image from being parsed (finding `!` before `[` and continue).
 ![image](images/report5_500_issue.png)
- However, this would lead to error if the first char in the file is the open bracket of the first valid link. In this case, `nextOpenBracket` is 0, so ` if (!(markdown.charAt(nextOpenBracket-1) == '!'))` would lead to `IndexOutOfBoundsException`, which would be catched, and skip this open bracket. So the first link is not parsed by my `MarkdownParse.java`. The code shown above should be fixed.  
- 
+ However, this would lead to error if the first char in the file is the open bracket of the first valid link. In this case, `nextOpenBracket` is 0, `nextOpenBracket-1` = -1, so `markdown.charAt(nextOpenBracket-1)` would lead to `IndexOutOfBoundsException`, which would be catched, and skip this open bracket.  
+ So the first link is not parsed by my `MarkdownParse.java`. The code shown above should be fixed.  
+
 ## Thank you for reading!  
 ![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)   
