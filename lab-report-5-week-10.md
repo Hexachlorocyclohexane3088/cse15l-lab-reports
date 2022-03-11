@@ -61,8 +61,8 @@ Hence some code eliminating image link should be added, such as
 ## Second Test (output in line 894)  
 We could open the `results.txt` in either directory. 
 Go to line 894, we could find that it is the output of test on `500.md`.  
-
-This is the content of `580.md`:  
+![image](images/report5_to500.png)
+This is the content of `500.md`:  
 ![image](images/report5_580.png)
 From the output of the script, we could tell that output of my `MarkdownParse.java` is `[]`, while output of the given `MarkdownParse.java` is `[/url]`.  
 We could determine the actual output by the following:  
