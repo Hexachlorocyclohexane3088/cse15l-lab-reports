@@ -24,17 +24,40 @@ The result is then stored in a txt file with name `diff.txt`:
 ![image](images/report5_diff3.png)
 ![image](images/report5_diff4.png)
 We would like to examine the these two differences:  
-Difference in line 10
-## First test 
-The corresponding to file `201.md`(we could look for that using `cat`). 
-The content in `201.md` is 
+Difference in line 1070: 
+![image](images/report5_diff_in_1070(580).png)
+And difference in line :
 
+
+## First Test (output in line 1070)
+We could open the `results.txt` in either directory. 
+Go to line 1070, we could find that it is the output of test on `580.md`.  
+![image](images/report5_line1070.png)
+This is the content of `580.md`:  
+![image](images/report5_580.png)
+From the output of the script, we could tell that output of my `MarkdownParse.java` is `[]`, while output of the given `MarkdownParse.java` is `[/url]`.  
+We could determine the actual output by the following:  
+![image](images/report5_run_actual_580.png)  
+So the actual output coincide with what we have concluded. 
 We could use [the CommonMark demo site](https://spec.commonmark.org/dingus/) to determine the correct output. 
-We could figure out that nothing is parsed, so the correct output should be 
+![image](images/report5_actualParse_580.png)
+We could figure out that no link is parsed(in fact it is trying to parse a image), so the correct output should be 
 ```
 []
 ```
-The given 
-
+Output of my `MarkdownParse.java` is correct, while the output of the given `MarkdownParse.java` is incorrect.  
+This is because, in the given `MarkdownParse.java` , there is no code being implemented to detect `!` before the `[`, which if present, we should jump to the next potential link. (`!` before `[` indicates a image instead of a link).  
+![image](images/report5_givenCode1.png)  
+![image](images/report5_givenCode2.png)
+![image](images/report5_givenCode3.png)
+Hence some code eliminating image link should be added, such as 
+```
+ try {
+        if (!(markdown.charAt(nextOpenBracket-1) == '!')) {
+            toReturn.add(markdown.substring(openParen + 1, closeParen));
+        } 
+    }
+```
+## Second Test (output in line 1070)
 ## Thank you for reading!  
 ![Image](https://ucsdnews.ucsd.edu/news_uploads/Resized_Geisel_Library_08.31.jpg)   
